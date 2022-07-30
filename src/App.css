@@ -2,37 +2,109 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #ccdbdc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board {
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notes_list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add_btn {
+  background-color: #263d42;
+  margin: 15px 0 30px 0;
+  border: none;
+  height: 55px;
+  width: 150px;
+  font-family: Impact, Haettenschweiler, Arial, 'Arial Narrow Bold', sans-serif;
+  color: #80ced7;
+  font-size: large;
+}
+
+
+
+.text_notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  background: #80ced7;
+  text-align: center;
+}
+
+.text_notes input {
+  text-align: center;
+  width: 90%;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #63c7b2;
+}
+
+.text_notes form {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.text_description {
+  height: 80%;
+  width: 95%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263d42;
 }
 
-.App-link {
-  color: #61dafb;
+.text_notes span {
+  display: block;
+  word-wrap: break-word;
+  width: 94%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete__btn {
+  width: 93%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete__btn i {
+  font-size: large;
+  color: #263d42;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #263d42;
+}
+
+.cancel_save {
+  color: #263d42;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cancel_save i {
+  font-size: large;
+  margin: 0 5px 0 0;
+}
+
+.cancel_save p {
+  font-size: x-small;
 }
